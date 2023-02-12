@@ -1,6 +1,5 @@
 const restData = [
     {
-        "URL": "http://www.just-eat.co.uk/restaurants-cn-chinese-cardiff/menu",
         "_id": "1",
         "address": "228 City Road",
         "address line 2": "Cardiff",
@@ -12,7 +11,6 @@ const restData = [
         "image": "1.jpg"
     },
     {
-        " URL": "http://www.just-eat.co.uk/restaurants-atthai-ss9/menu",
         "_id": "2",
         "address": "376 Rayleigh Road",
         "address line 2": "Essex",
@@ -24,7 +22,6 @@ const restData = [
         "image": "2.jpg"
     },
     {
-        "URL": "http://www.just-eat.co.uk/restaurants-atthairestaurant/menu",
         "_id": "3",
         "address": "30 Greyhound Road Hammersmith",
         "address line 2": "London",
@@ -36,7 +33,6 @@ const restData = [
         "image": "3.jpg"
     },
     {
-        "URL": "http://www.just-eat.co.uk/restaurants-atthairestaurant/menu",
         "_id": "4",
         "address": "30 Greyhound Road Hammersmith",
         "address line 2": "London",
@@ -48,7 +44,6 @@ const restData = [
         "image": "4.jpg"
     },
     {
-        "URL": "http://www.just-eat.co.uk/restaurants-indiancom-ch4/menu",
         "_id":"5",
         "address": "9 Broughton Hall Road",
         "address line 2": "Broughton",
@@ -60,7 +55,6 @@ const restData = [
         "image": "5.png"
     },
     {
-        "URL": "http://www.just-eat.co.uk/restaurants-007takeaway-s65/menu",
         "_id": "6",
         "address": "6 Drummond Street",
         "address line 2": "Rotherham",

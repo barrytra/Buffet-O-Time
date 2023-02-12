@@ -127,7 +127,7 @@ export default function Slider(){
                         <Head>Welcome!!</Head>
                         <Tag>Eat without limits But quick</Tag>
                     </Info>
-                    <Button to='/'>Book Now</Button>
+                    <Button to='/#restaurants'>Book Now</Button>
                     </Text>
                 </Slide>
             </Wrapper>

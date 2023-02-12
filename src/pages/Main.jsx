@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import styled from "styled-components"
 import Card from "../components/Card"
 import Data from "../Data/Data"
@@ -15,9 +15,13 @@ const CardsList = styled.section`
     text-decoration: none;
     justify-content: center;
 `
+const EmptyDiv = styled.div`
+  margin: -30px auto 100px auto;
+  padding: 5px;
+`
 const Div = styled.div`
 width: 70%;
-margin: 50px auto;
+margin: 0 auto;
 `
 const Heading = styled.h1`
 font-size:30px;
@@ -28,9 +32,10 @@ font-family: "McLaren", cursive;
 
 export default function Main() {
 
+  
   const Cards = Data.map(item => {
     return (
-      <Link to={`/restraunt/${item._id}`}>
+      <Link to={`/restaurant/${item._id}`}>
         <Card
           key={item._id}
           image={item.image}
@@ -38,7 +43,6 @@ export default function Main() {
           name={item.name}
           address={item.address}
           food={item.type_of_food}
-          link={item.URL}
         />
       </Link>
     )
@@ -49,7 +53,8 @@ export default function Main() {
       <Navbar />
       <Slider />
       <Div>
-        <Heading>Highly Recomended Restaurants in Delhi</Heading>
+        <EmptyDiv id="restaurants"></EmptyDiv>
+        <Heading >Highly Recomended Restaurants in Delhi</Heading>
         <CardsList>
           {Cards}
         </CardsList>

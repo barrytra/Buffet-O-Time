@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Nav = styled.nav`
     z-index: 4;
-    background-color: white;
+    background-color: #ffffff;
     padding: 16px 5%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     display: flex;

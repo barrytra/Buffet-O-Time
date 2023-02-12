@@ -3,7 +3,7 @@ import Styled from "styled-components"
 // import {Link} from "react-router-dom"
 
 const Div = Styled.div`
-     width: auto;
+    width: auto;
     height: auto;
     position: relative;
     border-radius: 10px;
@@ -12,7 +12,6 @@ const Div = Styled.div`
     flex-direction: column;
     overflow: hidden;
     text-decoration: none;
-
 `
 const Another = Styled.div`
     position: relative;
@@ -67,9 +66,10 @@ const WholeDiv = Styled.div`
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+    background-color: white;
     :hover{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-        
+    
     }
 `
 

@@ -1,34 +1,42 @@
-import React,{useEffect,useState} from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import { useLocation } from "react-router";
 import Data from "../Data/Data";
-import RestaurantCard from "../components/RestaurantCard";
-
+import RestaurantCard from "../components/RestaurantCard/RestaurantCard";
+import BookNow from "../components/RestaurantCard/BookNow"
 const Div = styled.div`
-    margin-top: 100px;
+    display: flex;
+    margin-top: 15px;
 `
-// const H1=styled.h1`
-// font-size: 2rem;
-// `
+const Wholediv = styled.div`
+    width: 90%;
+    margin: 150px auto;
+    max-width: 1080px;
+`
 
-
-export default function Restaurant(props) {
+export default function Restaurant() {
     const location = useLocation();
     const path = location.pathname.split('/')[2];
-    const [restraunt,setRestraunt]= useState({});
+    const [Restaurant, setRestaurant] = useState({});
 
     useEffect(() => {
-    const clickedRestrauntData = Data.find(obj => obj._id === path);
-    // console.log(clickedRestrauntData);
-     setRestraunt(clickedRestrauntData);
-    }, [path])
+        const clickedRestaurantData = Data.find(obj => obj._id === path);
+        // console.log(clickedRestaurantData);
+        setRestaurant(clickedRestaurantData);
+    },  [path])
 
-    const XYZ = () => {
-        return(
+    const Restocard = () => {
+        
+        return (
             <Div>
-            <RestaurantCard  name={restraunt.name}/>
-
+                <RestaurantCard 
+                name={Restaurant.name}
+                rating = {Restaurant.rating}
+                address = {Restaurant.address}
+                cuisine = {Restaurant.type_of_food}
+                />
+                <BookNow />
             </Div>
         )
     }
@@ -36,8 +44,10 @@ export default function Restaurant(props) {
     return (
         <div>
             <Navbar />
-            <XYZ/>
-            
+            <Wholediv>
+                <Restocard />
+            </Wholediv>
+
         </div>
 
     )
