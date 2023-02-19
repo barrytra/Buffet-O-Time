@@ -1,3 +1,12 @@
+# Contract Address on Filecoin Hyperspace testnet
+
+The smart contract to mint tokens has been deployed at 0x0A1994c6c0719D95727A70Bac8F5E12186Bb5Ea0
+
+# Link to test app
+
+The app has been deployed at 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
